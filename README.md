@@ -1,5 +1,9 @@
 # README
 
+- Procfile removed
+    web: bundle exec puma -C config/puma.rb
+    release: bundle exec rake db:migrate
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
