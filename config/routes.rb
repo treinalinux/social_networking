@@ -11,4 +11,8 @@ Rails.application.routes.draw do
     resources :users, only: :index
   end
 
+  root to: "user/timeline#index"
+
+  namespace :user do
+  end
 end
