@@ -34,6 +34,8 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   # factory_bot_rails for tests
   gem 'factory_bot_rails'
+  # rubocop
+  gem 'rubocop', require: false
 end
 
 group :development do

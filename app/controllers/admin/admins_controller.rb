@@ -1,5 +1,5 @@
 class Admin::AdminsController < AdminController
-  before_action :set_admin, only: [:edit, :update, :destroy]
+  before_action :set_admin, only: %i[edit update destroy]
 
   def index
     @admins = Admin.order(id: :desc)
@@ -47,5 +47,4 @@ class Admin::AdminsController < AdminController
   def set_admin
     @admin = Admin.find(params[:id])
   end
-
 end
