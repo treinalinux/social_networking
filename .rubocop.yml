@@ -1,6 +1,18 @@
 ---
-Style/ClassAndModuleChildren:
-  Enabled: false
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
 
-Style/EmptyMethod:
-  Enabled: false
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  TargetRubyVersion: 2.7.2
+
+  Exclude:
+    - 'db/schema.rb'
+
+Rails:
+  Enabled: true
