@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Admin::AdminsController < AdminController
   before_action :set_admin, only: %i[edit update destroy]
 
