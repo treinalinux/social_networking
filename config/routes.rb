@@ -6,12 +6,12 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   namespace :admin do
-    root to: "home#index"
+    root to: 'home#index'
     resources :admins
     resources :users, only: :index
   end
 
-  root to: "user/timeline#index"
+  root to: 'user/timeline#index'
 
   namespace :user do
   end

@@ -8,6 +8,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 
-Admin.create(email: "admin@empresa.corp", password: "123456")
+Admin.create(email: 'admin@empresa.corp', password: '123456')
 
-puts "admin created"
+puts 'admin created'
